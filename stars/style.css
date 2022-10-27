@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffff;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    perspective: 200px;
+background:black;
+}
+
+.block {
+    height: 7vh;
+    width: 5vw;
+    background-color: rgba(53, 192, 197);
+    margin: 20px;
+    animation: fade 5s linear infinite;
+}
+
+@keyframes fade {
+    0% {
+        
+        transform: rotate(45deg) translateZ(200px) scale(1);
+    }
+
+    100% {
+        transform: rotate(45deg) translateZ(0) scale(0);
+        box-shadow: 0 0 30px aqua;
+    }
+}
